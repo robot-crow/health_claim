@@ -4,12 +4,21 @@ import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 import shap
 
+'''
+The DataFrame Extractor exists to capture the exact crystallised output of the preceding steps in the pipeline
+This facilitates explainability, as Shapley values can be easily calculated, made presentation-ready (some in 
+tech prefer Shapley values to be a percentage contribution to output...) as well as makes deployment to app
+a case of loading a model housing rather than writing predict and shap handlers bespoke-style
+'''
 class DfExtractor(BaseEstimator, TransformerMixin):
     def __init__(self):
         self.data_frame = None
+
+        # stock sk pipleline adaptor-attributes e.g for get_feature_names_out(), custom pipe elements need these
         self.feature_names_in_ = None
         self.feature_names_out_ = None
 
+    # must apply fit & transform to fit pipeline. All I really care about is "is this a dataframe?"
     def fit(self, X, y=None):
         if isinstance(X, pd.DataFrame):
             self.feature_names_in_ = np.array(X.columns)
@@ -22,13 +31,19 @@ class DfExtractor(BaseEstimator, TransformerMixin):
             self.feature_names_out_ = np.array(X.columns)
         return X
 
+    # copied from ColumnTransformer & other modules in form
     def set_output(self, transform=None):
         return
 
+    # compatibility adaptor
     def get_feature_names_out(self, input_features=None):
         return self.feature_names_out_
 
-
+'''
+I am the Model Housing. I exist to handle shap explainers for general case applications of regression and classification 
+estimators trained by a ModelTrainer class. Takes a pipeline with a dataframe extractor - without the shaps and thus
+df extractor, you could really just use pipeline.predict()
+'''
 class ModelHousing():
     def __init__(self, model_pipe, mode):
         self.mode = mode

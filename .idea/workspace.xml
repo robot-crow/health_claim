@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8872a8eb-638e-440b-9dc6-f2a4194abe8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/harvest_data-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/harvest_data-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/health_claim_prototype-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/scratchpad-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dump.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/dump.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/headers/model_header.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/claimnum_housing.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/claimnum_housing.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/gross_housing.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/status_housing.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/status_housing.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pages/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/harvest_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/harvest_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_claim_prototype.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/health_claim_prototype.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_claim_prototype.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_header.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/claimnum_housing.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/claimnum_housing.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/gross_housing.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/status_housing.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/status_housing.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +47,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Mickey Nine/PythonProjects/repo/py_projects/health_claim/app/app.py",
+    "last_opened_file_path": "C:/Users/Mickey Nine/PythonProjects/repo/py_projects/health_claim/app/headers",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mickey Nine\PythonProjects\repo\py_projects\health_claim\app\headers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <module name="health_claim" />
@@ -71,5 +89,16 @@
       <updated>1674063957809</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
